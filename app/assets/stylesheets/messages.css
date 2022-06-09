@@ -3,41 +3,75 @@
   display: flex;
 }
 
+
+
+/* サイドバー */
+
 .side_bar {
   height: 100%;
   width: 300px;
-  padding: 0 20px;
 }
 
 .side_bar_header {
   height: 100px;
   background-color: #253141;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user_name a {
+  color: #fafafa;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.create_chat_link a {
+  border: solid 1px lightblue;
+  text-decoration: none;
+  color: deepskyblue;
+  font-size: 10px;
+  padding: 14px;
 }
 
 .rooms {
   height: calc(100% - 100px);
   background-color: #2f3e51;
+  padding: 0 20px;
+  overflow: scroll;
 }
+
+.room_name {
+  padding: 20px 0 40px;
+}
+
+.room_name a {
+  color: white;
+  text-decoration: none;
+}
+
+/* メインチャット */
 
 .main_chat {
   height: 100%;
   width: calc(100vw - 300px);
-  padding: 0 40px;
 }
 
 .main_header {
   height: 100px;
   background-color: #ffffff;
+  padding: 0 40px;
 }
 
 .messages {
   height: calc(100% - 100px - 90px);
   background-color: #fafafa;
-  padding-top: 46px;
+  padding: 46px 40px 0;
 }
 
 .message_form {
   height: 90px;
   background-color: #dddddd;
-  padding: 20px 0;
+  padding: 20px 40px;
 }
