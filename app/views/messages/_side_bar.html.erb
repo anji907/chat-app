@@ -8,8 +8,10 @@
     </div>
   </div>
   <div class="rooms">
-    <div class="room_name">
-      <a href="#">chatroom1</a>
-    </div>
+    <% current_user.rooms.each do |room| %>
+      <div class="room_name">
+        <%= link_to room.name, '#' %>
+      </div>
+    <% end %>
   </div>
 </div>
