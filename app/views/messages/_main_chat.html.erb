@@ -6,13 +6,7 @@
     </div>
   </div>
   <div class="messages">
-    <div class="message">
-      <div class="message_info">
-        <div class="name">Tom</div>
-        <div class="date">2022/06/10(Fri) 14:20:30</div>
-      </div>
-      <div class="content">hello, world!</div>
-    </div>
+    <%= render partial: 'message', collection: @messages %>
   </div>
   <%= form_with model: [@room, @message], class: "form", local: true do |f| %>
     <div class="form-input">
